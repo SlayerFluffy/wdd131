@@ -12,12 +12,12 @@
         max-width: 1200px;
     }
 
-    .gallery h1 {
+    .gallery h2 {
         grid-column: 1 / span 2;
         height: fit-content;
     }
 
-    .gallery h2 {
+    .gallery h3 {
         grid-column: 1/span 2;
         height: fit-content;
     }
@@ -90,12 +90,12 @@
         max-width: 1200px;
     }
 
-    .gallery h1 {
+    .gallery h2 {
         grid-column: 1 / span 3;
         height: fit-content;
     }
 
-    .gallery h2 {
+    .gallery h3 {
         grid-column: 1/span 3;
         height: fit-content;
     }
