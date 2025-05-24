@@ -1,0 +1,128 @@
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+}
+
+h1 {
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+    color: tan;
+    font-size: 2.5rem;
+    background-color: #293839;
+    margin: 0 0 0 0;
+    padding: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Tagesschrift', 'Arial Narrow', Arial, sans-serif;
+    background-color: #222329;
+    color: tan;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+/*Rules for small screen*/
+
+.weather.table::before {
+    content: url(/images/light-rain-icon.svg);
+}
+
+.data, .weather {
+    width: 100%;
+    background-color: rgba(211, 193, 170);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+    background-color: #293839;
+    padding: 0.5rem;
+    color: tan;
+    width: 100%;
+}
+
+
+/*Rules for large screen*/
+
+@media screen and (min-width: 400px) {
+    /* code */
+    .icon-small-screen {
+        display: none;
+    }
+    .weather h2::after {
+        content: url(/images/light-rain-icon.svg);
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        width: 15em;
+        top: 10%;
+        left: 2.5%;
+        background-color: rgba(211, 193, 170, 0.808);
+    }
+    .data.h2 {
+        font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+        background-color: #293839;
+        color: tan;
+        width: 100%;
+    }
+
+    .weather {
+        position: absolute;
+        width: 10em;
+        bottom: 5%;
+        right: 1%;
+        background-color: rgba(211, 193, 170, 0.808);
+    }
+    .weather.h2 {
+        justify-content: center;
+        font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+        background-color: #293839;
+        color: tan;
+        width: 100%;
+    }
+        
+
+    table {
+            width: 100%;
+    }
+    
+    th,td {
+        padding: .25rem;
+        border-bottom: #222329 solid 1px;
+    }
+    th {
+        border-right: #222329 solid 1px;
+    }
+
+}
+
+
