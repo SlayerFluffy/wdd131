@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <meta name="description" content="A sample form submission page.">
+    <meta name="author" content="Drew Jezek">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        
+        <form method="get" action="review.html" class="review-form">
+            
+            <label for="productName" class="required">Product Name</label>
+                <select name="product" id="productName" required>
+                    <option value="" disabled selected>Select a Product ... </option>
+                </select>
+
+            <div class="required" >Overall Rating</div>
+            <div class="stars">
+                <input type="radio" name="rating" id="5star" value="5" required><label for="5star" title="5 star"></label>
+                <input type="radio" name="rating" id="4star" value="4" required><label for="4star" title="4 stars"></label>
+                <input type="radio" name="rating" id="3star" value="3" required><label for="3star" title="3 stars"></label>
+                <input type="radio" name="rating" id="2star" value="2" required><label for="2star" title="2 stars"></label>
+                <input type="radio" name="rating" id="1star" value="1" required><label for="1star" title="1 stars"></label>
+            </div>
+              
+
+            <label for="installdate" class="required">Date of Installation</label> <input type="date" name="installdate" id="installdate" required>
+
+            <div>Which features did you find useful in the product? <br>(check all that apply)</div>
+            <label for="durability"><input type="checkbox" id="durability" name="features" value="yes">Durability</label>
+            <label for="ease"><input type="checkbox" id="ease" name="features" value="yes">Ease of Use</label>
+            <label for="performance"><input type="checkbox" id="performance" name="features" value="yes">Performance</label>
+            <label for="design"><input type="checkbox" id="design" name="features" value="yes">Design</label>
+
+            <label for="comments">Review <textarea name="comments" id="comments" rows="5" placeholder="Please share your thoughts..."></textarea></label>
+
+            <label for="uname">Your Name<input type="text" id="uname" name="uname"></label>
+
+            <div>(<p class="astrisk">*</p> denotes a required field)</div>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Drew Jezek | USA</p>
+        <p>Last Updated: <span id="lastmodified"></span> </p>
+    </footer>
+</body>
+</html>

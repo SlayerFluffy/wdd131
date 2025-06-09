@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+    background-color: #293839;
+    color: tan;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----------- FORM --------------*/
+
+.required:after {
+    display: inline-block;
+    color: red;
+    content: ' *';
+    font-weight: normal;
+}
+
+.astrisk {
+    color: red;
+    display: inline-block;
+}
+
+.review-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #c8d5e4;
+    border-radius: 7px;
+}
+
+.review-form label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: .75rem;
+}
+
+
+.review-form div {    
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    padding-bottom: .75rem;
+
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form input[type="date"]
+{
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 2rem;
+        padding: .75rem;
+}
+
+
+.review-form textarea
+{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.review-form input[type="checkbox"] {
+    margin: 0 0.5rem 2rem 0;
+}
+
+
+
+
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.stars > input {
+    display: none;
+}
+
+.stars > label {
+    font-size: 2rem;
+    color: #4e4e4e;
+    cursor: pointer;
+}
+
+.stars>input:checked~label {
+    color: gold;
+}
+
+.stars>label:hover,
+.stars>label:hover~label {
+    color: gold;
+}
+
+.stars > label::before {
+    content: '\2606';
+}
+
+.stars input:checked ~ label:before {
+    content: '\2605';
+}
+
+
+
+
+.review-form input[type="submit"] {
+    border: solid 1px #333;
+    border-radius: 6px;
+    background-image: linear-gradient(#293839, #222329);
+    color: #f0f4f8;
+    font-size: 1.4rem;
+    padding: .75rem 2rem;
+    width: 100%;
+    max-width: 600px;
+    
+    box-shadow: 1px 1px 4px #333;
+}
+
+/*----------- FOOTER --------------*/
+
+footer {
+    font-family: 'Tagesschrift', 'Arial Narrow', Arial, sans-serif;
+    background-color: #222329;
+    color: tan;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0 0 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
