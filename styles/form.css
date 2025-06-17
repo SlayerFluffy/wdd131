@@ -156,6 +156,10 @@ h1 {
     box-shadow: 1px 1px 4px #333;
 }
 
+.clear-footer {
+    min-height: 6rem;
+}
+
 /*----------- FOOTER --------------*/
 
 footer {
