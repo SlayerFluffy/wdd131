@@ -191,10 +191,17 @@ p {
 
 .gallery img {
     max-width: 100%;
-    height: auto;
+    max-height: 250px;
+    aspect-ratio: auto;
     border-radius: 10px;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+@media screen and (max-width: 1230px) {
+    .portfolios {
+        grid-template-columns: 1fr;
+    }
 }
 
 .lightbox {
