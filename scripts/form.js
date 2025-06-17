@@ -34,7 +34,7 @@ const products = [
 ];
  
 // populate products dropdown
-if (window.location.pathname.endsWith("form.html")) {
+if (window.location.pathname.endsWith("form")) {
   const productSelect = document.getElementById("productName");
   products.forEach(product => {
     const option = document.createElement("option");
@@ -47,7 +47,7 @@ if (window.location.pathname.endsWith("form.html")) {
 // track number of reviews submitted
 // initialize review count in localStorage if not already set
 
-if (window.location.pathname.endsWith("review.html")) {
+if (window.location.pathname.endsWith("review")) {
   if (!localStorage.getItem("reviewCount")) {
     localStorage.setItem("reviewCount", 0);
   }
